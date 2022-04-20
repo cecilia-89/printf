@@ -27,5 +27,7 @@ int (*get_print(char s))(va_list, flags_t *);
 int _printf(const char *format, ...);
 int get_flag(char s, flags_t *f);
 int print_percent(va_list l, flags_t *f);
+int print_int(va_list l, flags_t *f);
+void print_number(int n);
 
 #endif
