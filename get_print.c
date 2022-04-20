@@ -17,11 +17,10 @@ int (*get_print(char s))(va_list, flags_t *)
 
 		{'s', print_string},
 		{'c', print_char},
-		{'%', print_percent}
 
 		};
 
-	int flags = 3;
+	int flags = 2;
 
 	register int i;
 
