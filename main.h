@@ -4,12 +4,27 @@
 #include <stdlib.h>
 #include <stdarg.h>
 
+/**
+ * struct flags - user defined struct to turn on struct
+ * @plus: '+'
+ * @space: '-'
+ * @hash: '#'
+ *
+ */
+
 typedef struct flags
 {
 	int plus;
 	int space;
 	int hash;
 } flags_t;
+
+/**
+ * struct printHandler - data defined struct
+ * @c: pointer to char
+ * @f: pointer to function
+ *
+ */
 
 typedef struct printHandler
 {
