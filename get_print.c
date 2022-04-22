@@ -18,12 +18,16 @@ int (*get_print(char s))(va_list, flags_t *)
 		{'s', print_string},
 		{'c', print_char},
 		{'d', print_int},
-		{'i', print_int}
-
+		{'i', print_int},
+		{'b', print_binary},
+		{'u', print_unsigned},
+		{'x', print_hex},
+		{'X', print_hex_big},
+		{'o', print_octal}
 
 		};
 
-	int flags = 4;
+	int flags = 9;
 
 	register int i;
 
