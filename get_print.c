@@ -23,11 +23,13 @@ int (*get_print(char s))(va_list, flags_t *)
 		{'u', print_unsigned},
 		{'x', print_hex},
 		{'X', print_hex_big},
-		{'o', print_octal}
+		{'o', print_octal},
+		{'r', print_rev},
+		{'p', print_address}
 
 		};
 
-	int flags = 9;
+	int flags = 11;
 
 	register int i;
 

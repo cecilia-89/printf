@@ -45,6 +45,8 @@ int print_percent(va_list l, flags_t *f);
 int print_int(va_list l, flags_t *f);
 
 void print_number(int n); 
+int print_address(va_list l, flags_t *f);
+int print_rev(va_list l, flags_t *f);
 
 int print_unsigned(va_list l, flags_t *f);
 
